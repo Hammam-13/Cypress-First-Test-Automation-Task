@@ -1,0 +1,10 @@
+it('first typeScript', ()=>{
+    cy.visit('https://www.google.com/')
+    cy.get('input.gLFyf')
+        .type('test automation tools')
+        .type('{Enter}')
+    cy.wait(3000)
+    cy.get(':nth-child(3) > [data-text-ad="1"] > .cUezCb > .d5oMvf').click()
+    cy.wait(2000)
+    cy.contains('Features').click()
+})
